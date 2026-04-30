@@ -75,11 +75,21 @@
                     <a class="nav-link relative nav-link-active" href="about.html">about</a>
                     <a class="nav-link" href="contact.html">contact</a>
                 </nav>
-                <div class="md:hidden">
-                    <span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
-                </div>
+                <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center w-8 h-8 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" aria-label="Toggle menu">
+                    <span id="menu-icon-open" class="material-symbols-outlined text-[22px]">menu</span>
+                    <span id="menu-icon-close" class="material-symbols-outlined text-[22px] hidden">close</span>
+                </button>
             </div>
         </header>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200/40 dark:border-slate-800/40 bg-white/95 dark:bg-background-dark/95 backdrop-blur-xl">
+            <nav class="max-w-5xl mx-auto px-6 py-6 flex flex-col gap-5">
+            <a class="nav-link" href="index.html">home</a>
+            <a class="nav-link" href="exploring.html">exploring</a>
+            <a class="nav-link" href="writing.html">writing</a>
+            <a class="nav-link relative nav-link-active" href="about.html">about</a>
+            <a class="nav-link" href="contact.html">contact</a>
+            </nav>
+        </div>
         <main class="flex-1 max-w-[800px] mx-auto px-6 py-16 md:py-24">
             <section class="mb-20">
                 <span
@@ -221,6 +231,22 @@
         </footer>
     </div>
 
+
+    <script>
+        (function() {
+            var btn = document.getElementById('mobile-menu-btn');
+            var menu = document.getElementById('mobile-menu');
+            var iconOpen = document.getElementById('menu-icon-open');
+            var iconClose = document.getElementById('menu-icon-close');
+            if (btn && menu) {
+                btn.addEventListener('click', function() {
+                    var hidden = menu.classList.toggle('hidden');
+                    iconOpen.classList.toggle('hidden', !hidden);
+                    iconClose.classList.toggle('hidden', hidden);
+                });
+            }
+        })();
+    </script>
 </body>
 
 </html>
