@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>What I'm Exploring - Personal Lab</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-link {
+            @apply text-[13px] tracking-[0.05em] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 lowercase;
+        }
+        .nav-link-active {
+            @apply text-slate-900 dark:text-white font-semibold;
+        }
+        .nav-link-active::after {
+            content: '';
+            @apply absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased font-display">
+    <div class="relative flex min-h-screen flex-col">
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200/40 bg-white/70 backdrop-blur-xl dark:border-slate-800/40 dark:bg-background-dark/70">
+            <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 lg:px-12">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="flex h-6 w-6 items-center justify-center rounded bg-slate-900 dark:bg-white text-white dark:text-slate-900">
+                        <span class="material-symbols-outlined text-[16px]">labs</span>
+                    </div>
+                    <span class="text-sm font-bold tracking-tight">Lab</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="nav-link" href="index.html">home</a>
+                    <a class="nav-link relative nav-link-active" href="exploring.html">exploring</a>
+                    <a class="nav-link" href="writing.html">writing</a>
+
+                    <a class="nav-link" href="about.html">about</a>
+                    <a class="nav-link" href="contact.html">contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="w-6 h-6"></div>
+                </div>
+            </div>
+        </header>
+        <main class="mx-auto w-full max-w-7xl flex-1 px-6 py-12 lg:px-12 lg:py-20">
+            <div class="mb-16 max-w-2xl">
+                <h1
+                    class="text-4xl font-black leading-tight tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
+                    What I’m <span class="text-primary">Exploring</span>
+                </h1>
+                <p class="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-400">
+                    Explorations in AI-native e-commerce, strategy, systems thinking, and operator reality
+                </p>
+            </div>
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+                    <div class="h-48 w-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                        <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Abstract neural network visualization with blue glowing nodes"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD0T8NWgUu-P2cAfVZ9w6Tw-wUwmsQf0PF9n_gPR36GT6UX2eIzMqeZo1Kwcb7XapYQOneNfkKN7Mm-wXzmUj1hcy0iiN2dv_nL5wcS_rGYfJAB5Cb9qToIydwnYOZlZxsnchrM-PjAIKLb8GfLEowxBOwfLyrxTu6x2y8jQ909jHZqPurQEraGvqrjc76z47xykelXJsEVFJLenb0b1LM1v4hope0tafGcskaHVhHW7ZixeGWHjAii2rXGifZbeX74DrJDrvz-VTg')">
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6">
+                        <div class="mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">smart_toy</span>
+                            <h3 class="text-xl font-bold">Agentic Workflows</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Why it matters
+                                </h4>
+                                <p class="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Reimagining the transaction layer for non-human buyers. Shifting from UI-centric
+                                    shopping to protocol-driven procurement.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">What I’m testing
+                                </h4>
+                                <p class="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Multi-agent negotiation protocols and autonomous budget-authorized wallets.
+                                </p>
+                            </div>
+                            <div class="rounded-lg bg-primary/5 p-3 border border-primary/10">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-primary">What success looks
+                                    like</h4>
+                                <p class="mt-1 text-sm font-medium text-slate-900 dark:text-slate-200">
+                                    40% reduction in enterprise procurement overhead via zero-touch ordering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+                    <div class="h-48 w-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                        <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Futuristic digital interface with floating data blocks"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBoMfg3s6ioolAoB3f0gj-VzsF6lmWYr01YkFTa-vuRRddWJlfDod4aRSZVVPHobIh3afsZlh2swbrok8XZizSl1MfvBhSLbcK_epbS_PyvlnwrW_zlXCrWoiYbI_fO64I75RlWn5fViGKaGeAyxOW9YZ_sfmev4pp_sLCdrZbUBNTu880pzfV-gEFoIEzZ8vWafbdSljwGb6txY0DRH0rhvkBgTjDVqaVUO3k_WLEnIAmvpiJdEBybZM8-M-mv0PiYfjvsDu3QGdw')">
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6">
+                        <div class="mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">terminal</span>
+                            <h3 class="text-xl font-bold">Operator Tools</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Why it matters
+                                </h4>
+                                <p class="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Legacy ERPs are the bottleneck. Operators need context-aware stacks that speak the
+                                    language of LLMs.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">What I’m testing
+                                </h4>
+                                <p class="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Semantic data layers for real-time supply chain telemetry and automated SKU mapping.
+                                </p>
+                            </div>
+                            <div class="rounded-lg bg-primary/5 p-3 border border-primary/10">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-primary">What success looks
+                                    like</h4>
+                                <p class="mt-1 text-sm font-medium text-slate-900 dark:text-slate-200">
+                                    A "single-player" commerce operator managing $10M+ GMV without a back-office team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="group flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-900/50 transition-all hover:shadow-xl hover:shadow-primary/5">
+                    <div class="h-48 w-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                        <div class="h-full w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                            data-alt="Minimalist workspace with notepad and clean shadows"
+                            style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMt_dqB1QzpJKU5AW-EX-A3aylPRCie5YzY4QcS8Aos7uwaEs6QS0-_RHf1L2I7QXDRB0QXNPpiqWhqHAhdVa_ccLFo4Rykzy96omXs6U7nhXtS_ixA12z4w_G2fuW45oag0VXqDzE7PUA4kDRws-FRCL7eBzp34_ZTpcOQDgBC7xFY5GvRwTs5FH1bLxSWHM5KTJfxZ2Mb71Y9Ywst1dT7bBDlAIRD-zo1v7hQjdWcmi2TQKHpQMVSlswMtmgJ1soPgTQQ5qzuIc')">
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-6">
+                        <div class="mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+                            <h3 class="text-xl font-bold">Field Notes</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Why it matters
+                                </h4>
+                                <p class="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                    The theoretical becomes practical. Synthesizing signal from the noise of the
+                                    bleeding edge.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">What I’m testing
+                                </h4>
+                                <p class="mt-1 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                                    Weekly deep-dives into agentic UX friction points and cross-LLM performance
+                                    benchmarks.
+                                </p>
+                            </div>
+                            <div class="rounded-lg bg-primary/5 p-3 border border-primary/10">
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-primary">What success looks
+                                    like</h4>
+                                <p class="mt-1 text-sm font-medium text-slate-900 dark:text-slate-200">
+                                    Building a high-signal community of 500+ AI-native commerce operators.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24">
+                <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white mb-8">The Framework</h2>
+                <div
+                    class="divide-y divide-slate-200 border-y border-slate-200 dark:divide-slate-800 dark:border-slate-800">
+                    <details class="group py-6" open="">
+                        <summary class="flex cursor-pointer items-center justify-between">
+                            <h3 class="text-lg font-semibold group-hover:text-primary transition-colors">Phase 1:
+                                Autonomous Search &amp; Discovery</h3>
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="mt-4 max-w-3xl">
+                            <p class="text-slate-600 dark:text-slate-400">
+                                How agents parse unstructured product data without human intervention. We are building
+                                the scaffolding for RAG-driven discovery engines that prioritize utility over
+                                SEO-manipulation.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="group py-6">
+                        <summary class="flex cursor-pointer items-center justify-between">
+                            <h3 class="text-lg font-semibold group-hover:text-primary transition-colors">Phase 2:
+                                Negotiation &amp; Smart Contracts</h3>
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="mt-4 max-w-3xl">
+                            <p class="text-slate-600 dark:text-slate-400">
+                                Moving beyond the "Buy Now" button. Testing LLM-to-LLM negotiation frameworks where
+                                agents bid for inventory based on real-time demand signals and predefined budget
+                                constraints.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="group py-6">
+                        <summary class="flex cursor-pointer items-center justify-between">
+                            <h3 class="text-lg font-semibold group-hover:text-primary transition-colors">Phase 3:
+                                Post-Transaction Orchestration</h3>
+                            <span
+                                class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+                        </summary>
+                        <div class="mt-4 max-w-3xl">
+                            <p class="text-slate-600 dark:text-slate-400">
+                                Automating the "what's next." Logistics tracking, exception handling, and automated
+                                returns processed entirely by agentic workflows integrated with legacy shipping APIs.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+
+        </main>
+        <footer class="border-t border-slate-100 dark:border-slate-800/60 py-20 bg-white dark:bg-background-dark">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="flex items-center gap-2">
+                    <span class="text-slate-400 text-[13px] font-medium tracking-tight lowercase">© 2024–2026
+                        ecomai.ai</span>
+                </div>
+                <div class="flex items-center gap-10">
+                    <a class="text-[13px] font-medium text-slate-400 hover:text-primary transition-colors lowercase tracking-wide"
+                        href="mailto:sean@ecomai.ai">email</a>
+                    <a class="text-[13px] font-medium text-slate-400 hover:text-primary transition-colors lowercase tracking-wide"
+                        href="https://www.linkedin.com/in/sean-a-finnegan/">linkedin</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

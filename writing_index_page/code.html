@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Writing Index | AI &amp; Commerce Strategist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#137fec",
+                "background-light": "#f6f7f8",
+                "background-dark": "#101922",
+              },
+              fontFamily: {
+                "display": ["Inter", "sans-serif"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .writing-list-item:hover .item-title {
+            color: #137fec;
+        }
+        .nav-link {
+            @apply text-[13px] font-medium transition-all duration-200 relative text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white;
+        }
+        .nav-link-active {
+            @apply text-slate-900 dark:text-white font-semibold;
+        }
+        .nav-link-active::after {
+            content: '';
+            @apply absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-200">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/40 dark:border-slate-800/40 bg-white/70 dark:bg-background-dark/70 backdrop-blur-xl">
+<div class="mx-auto max-w-5xl px-6 md:px-10 h-16 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<a class="flex items-center gap-2 group" href="#">
+<div class="flex h-7 w-7 items-center justify-center rounded bg-slate-900 dark:bg-white text-white dark:text-slate-900 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</div>
+<span class="text-sm font-bold tracking-tight">Lab</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="nav-link" href="#">Home</a>
+<a class="nav-link" href="#">Exploring</a>
+<a class="nav-link nav-link-active" href="#">Writing</a>
+<a class="nav-link" href="#">Experiments</a>
+<a class="nav-link" href="#">About</a>
+<a class="nav-link" href="#">Contact</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<a class="text-[11px] uppercase tracking-widest font-bold text-slate-400 hover:text-primary transition-colors" href="#">
+                    Recruiter Access
+                </a>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="mx-auto max-w-4xl px-6 md:px-10 py-16 md:py-24">
+<div class="mb-16 md:mb-24">
+<h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-50 mb-4">
+                    Writing
+                </h2>
+<p class="max-w-xl text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed">
+                    Field notes on agentic commerce, LLM reasoning, and the future of human-machine interfaces.
+                </p>
+</div>
+<div class="space-y-12 md:space-y-16">
+<a class="writing-list-item block group" href="#">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+<div class="flex-1">
+<h3 class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                The Agentic Commerce Frontier
+                            </h3>
+<p class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                Exploring how autonomous agents will redefine the transaction layer beyond simple chat interfaces.
+                            </p>
+</div>
+<div class="shrink-0 mt-2 md:mt-0">
+<span class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Oct 24, 2023</span>
+</div>
+</div>
+</a>
+<a class="writing-list-item block group" href="#">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+<div class="flex-1">
+<h3 class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                Minimalist AI UX
+                            </h3>
+<p class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                Why the best interface is often no interface at all, and how predictive intent is changing design.
+                            </p>
+</div>
+<div class="shrink-0 mt-2 md:mt-0">
+<span class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Sep 12, 2023</span>
+</div>
+</div>
+</a>
+<a class="writing-list-item block group" href="#">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+<div class="flex-1">
+<h3 class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                Supply Chain LLMs
+                            </h3>
+<p class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                A technical breakdown of inventory prediction models using specialized large language models.
+                            </p>
+</div>
+<div class="shrink-0 mt-2 md:mt-0">
+<span class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Aug 05, 2023</span>
+</div>
+</div>
+</a>
+<a class="writing-list-item block group" href="#">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+<div class="flex-1">
+<h3 class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                Context-Aware Commerce
+                            </h3>
+<p class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                Leveraging real-time sensor data to trigger hyper-personalized commerce events in the real world.
+                            </p>
+</div>
+<div class="shrink-0 mt-2 md:mt-0">
+<span class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Jul 18, 2023</span>
+</div>
+</div>
+</a>
+<a class="writing-list-item block group" href="#">
+<div class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+<div class="flex-1">
+<h3 class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                The Death of the SKU
+                            </h3>
+<p class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                Transitioning from static product listings to generative, on-demand physical assets.
+                            </p>
+</div>
+<div class="shrink-0 mt-2 md:mt-0">
+<span class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Jun 03, 2023</span>
+</div>
+</div>
+</a>
+</div>
+<div class="mt-24 py-12 px-8 rounded-2xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
+<h4 class="text-xl font-bold mb-2">Want more insights?</h4>
+<p class="text-slate-500 dark:text-slate-400 mb-8 max-w-md mx-auto">
+                    Subscribe for infrequent, high-signal field notes on the intersection of AI and commerce.
+                </p>
+<form class="flex flex-col md:flex-row gap-3 max-w-md mx-auto">
+<input class="flex-1 bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow" placeholder="email@example.com" type="email"/>
+<button class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary dark:hover:bg-primary dark:hover:text-white font-bold py-2 px-6 rounded-lg transition-colors" type="submit">
+                        Join
+                    </button>
+</form>
+</div>
+</div>
+</main>
+<footer class="mt-auto border-t border-slate-200 dark:border-slate-800 py-12">
+<div class="mx-auto max-w-4xl px-10 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="text-sm text-slate-400 dark:text-slate-500">
+                © 2024 Lab. Built for the era of intelligence.
+            </div>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">Twitter</span>
+<svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"></path></svg>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="sr-only">LinkedIn</span>
+<svg class="h-5 w-5 fill-current" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg>
+</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

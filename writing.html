@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Writing Index | AI &amp; Commerce Strategist</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .writing-list-item:hover .item-title {
+            color: #137fec;
+        }
+        .nav-link {
+            @apply text-[13px] tracking-[0.05em] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 lowercase;
+        }
+        .nav-link-active {
+            @apply text-slate-900 dark:text-white font-semibold;
+        }
+        .nav-link-active::after {
+            content: '';
+            @apply absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-200">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <header
+            class="sticky top-0 z-50 w-full border-b border-slate-200/40 bg-white/70 backdrop-blur-xl dark:border-slate-800/40 dark:bg-background-dark/70">
+            <div class="mx-auto flex h-14 max-w-7xl items-center justify-between px-6 lg:px-12">
+                <div class="flex items-center gap-2">
+                    <div
+                        class="flex h-6 w-6 items-center justify-center rounded bg-slate-900 dark:bg-white text-white dark:text-slate-900">
+                        <span class="material-symbols-outlined text-[16px]">labs</span>
+                    </div>
+                    <span class="text-sm font-bold tracking-tight">Lab</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="nav-link" href="index.html">home</a>
+                    <a class="nav-link" href="exploring.html">exploring</a>
+                    <a class="nav-link relative nav-link-active" href="writing.html">writing</a>
+
+                    <a class="nav-link" href="about.html">about</a>
+                    <a class="nav-link" href="contact.html">contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <div class="w-6 h-6"></div>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <div class="mx-auto max-w-4xl px-6 md:px-10 py-16 md:py-24">
+                <div class="mb-16 md:mb-24">
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight text-slate-900 dark:text-slate-50 mb-4">
+                        Writing
+                    </h2>
+                    <p class="max-w-xl text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed">
+                        Field notes on agentic commerce, LLM reasoning, and the future of human-machine interfaces.
+                    </p>
+                </div>
+                <div class="space-y-12 md:space-y-16">
+                    <a class="writing-list-item block group" href="field-note.html">
+                        <div
+                            class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+                            <div class="flex-1">
+                                <h3
+                                    class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                    The Agentic Commerce Frontier
+                                </h3>
+                                <p
+                                    class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                    Exploring how autonomous agents will redefine the transaction layer beyond simple
+                                    chat interfaces.
+                                </p>
+                            </div>
+                            <div class="shrink-0 mt-2 md:mt-0">
+                                <span
+                                    class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Oct
+                                    24, 2023</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="writing-list-item block group" href="field-note.html">
+                        <div
+                            class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+                            <div class="flex-1">
+                                <h3
+                                    class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                    Minimalist AI UX
+                                </h3>
+                                <p
+                                    class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                    Why the best interface is often no interface at all, and how predictive intent is
+                                    changing design.
+                                </p>
+                            </div>
+                            <div class="shrink-0 mt-2 md:mt-0">
+                                <span
+                                    class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Sep
+                                    12, 2023</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="writing-list-item block group" href="field-note.html">
+                        <div
+                            class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+                            <div class="flex-1">
+                                <h3
+                                    class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                    Supply Chain LLMs
+                                </h3>
+                                <p
+                                    class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                    A technical breakdown of inventory prediction models using specialized large
+                                    language models.
+                                </p>
+                            </div>
+                            <div class="shrink-0 mt-2 md:mt-0">
+                                <span
+                                    class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Aug
+                                    05, 2023</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="writing-list-item block group" href="field-note.html">
+                        <div
+                            class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+                            <div class="flex-1">
+                                <h3
+                                    class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                    Context-Aware Commerce
+                                </h3>
+                                <p
+                                    class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                    Leveraging real-time sensor data to trigger hyper-personalized commerce events in
+                                    the real world.
+                                </p>
+                            </div>
+                            <div class="shrink-0 mt-2 md:mt-0">
+                                <span
+                                    class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Jul
+                                    18, 2023</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="writing-list-item block group" href="field-note.html">
+                        <div
+                            class="flex flex-col md:flex-row md:items-baseline justify-between gap-2 border-b border-slate-200 dark:border-slate-800 pb-8 transition-colors">
+                            <div class="flex-1">
+                                <h3
+                                    class="item-title text-xl md:text-2xl font-bold text-slate-900 dark:text-slate-100 transition-colors">
+                                    The Death of the SKU
+                                </h3>
+                                <p
+                                    class="mt-2 text-base md:text-lg text-slate-500 dark:text-slate-400 leading-normal max-w-2xl">
+                                    Transitioning from static product listings to generative, on-demand physical assets.
+                                </p>
+                            </div>
+                            <div class="shrink-0 mt-2 md:mt-0">
+                                <span
+                                    class="text-sm font-medium text-slate-400 dark:text-slate-500 uppercase tracking-widest">Jun
+                                    03, 2023</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div
+                    class="mt-24 py-12 px-8 rounded-2xl bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-800 text-center">
+                    <h4 class="text-xl font-bold mb-2">Want more insights?</h4>
+                    <p class="text-slate-500 dark:text-slate-400 mb-8 max-w-md mx-auto">
+                        Subscribe for infrequent, high-signal field notes on the intersection of AI and commerce.
+                    </p>
+                    <form class="flex flex-col md:flex-row gap-3 max-w-md mx-auto">
+                        <input
+                            class="flex-1 bg-white dark:bg-slate-950 border-slate-200 dark:border-slate-800 rounded-lg px-4 py-2 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-shadow"
+                            placeholder="email@example.com" type="email" />
+                        <button
+                            class="bg-slate-900 dark:bg-white text-white dark:text-slate-900 hover:bg-primary dark:hover:bg-primary dark:hover:text-white font-bold py-2 px-6 rounded-lg transition-colors"
+                            type="submit">
+                            Join
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="border-t border-slate-100 dark:border-slate-800/60 py-20 bg-white dark:bg-background-dark">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="flex items-center gap-2">
+                    <span class="text-slate-400 text-[13px] font-medium tracking-tight lowercase">© 2024–2026
+                        ecomai.ai</span>
+                </div>
+                <div class="flex items-center gap-10">
+                    <a class="text-[13px] font-medium text-slate-400 hover:text-primary transition-colors lowercase tracking-wide"
+                        href="mailto:sean@ecomai.ai">email</a>
+                    <a class="text-[13px] font-medium text-slate-400 hover:text-primary transition-colors lowercase tracking-wide"
+                        href="https://www.linkedin.com/in/sean-a-finnegan/">linkedin</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

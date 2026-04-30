@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ecomai.ai | AI-native commerce strategist</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style type="text/tailwindcss">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .nav-link {
+            @apply text-[13px] tracking-[0.05em] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors duration-200 lowercase;
+        }
+        .nav-link-active {
+            @apply text-slate-900 dark:text-white font-semibold;
+        }
+        .nav-link-active::after {
+            content: '';
+            @apply absolute -bottom-1.5 left-1/2 -translate-x-1/2 w-1 h-1 bg-primary rounded-full;
+        }
+    </style>
+</head>
+
+<body
+    class="bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+        <header
+            class="sticky top-0 z-[100] w-full bg-white/70 dark:bg-background-dark/70 backdrop-blur-xl border-b border-slate-200/40 dark:border-slate-800/40">
+            <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
+                <div class="flex items-center gap-1.5 group cursor-pointer">
+
+                    <span
+                        class="text-slate-900 dark:text-slate-50 text-[14px] font-semibold tracking-tight lowercase">ecomai</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="nav-link relative nav-link-active" href="index.html">home</a>
+                    <a class="nav-link" href="exploring.html">exploring</a>
+                    <a class="nav-link" href="writing.html">writing</a>
+
+                    <a class="nav-link" href="about.html">about</a>
+                    <a class="nav-link" href="contact.html">contact</a>
+                </nav>
+                <div class="md:hidden">
+                    <span class="material-symbols-outlined text-slate-900 dark:text-slate-100">menu</span>
+                </div>
+            </div>
+        </header>
+        <main class="flex-1">
+            <section class="max-w-5xl mx-auto px-6 pt-32 pb-32 text-center">
+
+                <h1
+                    class="text-5xl md:text-7xl font-bold text-slate-900 dark:text-slate-50 tracking-tight leading-[1.05] mb-8">
+                    AI-native <span class="text-primary">e-commerce strategist</span>
+                </h1>
+                <p
+                    class="max-w-2xl mx-auto text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed mb-14 font-light">
+                    Strategy, insights, and experiments in AI-native commerce — grounded in 20+ years as a global
+                    e-commerce strategist and operator.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+
+                    <a href="exploring.html"
+                        class="w-full sm:w-auto min-w-[200px] px-8 py-4 bg-white dark:bg-transparent text-slate-900 dark:text-slate-100 font-medium rounded-full border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors text-center">
+                        What I’m exploring
+                    </a>
+                </div>
+            </section>
+            <section
+                class="w-full border-t border-slate-200 dark:border-slate-800 border-b border-b-slate-100 dark:border-b-slate-800/60 bg-slate-50/30 dark:bg-background-dark/30 py-16">
+                <div class="max-w-5xl mx-auto px-6">
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-12 items-center justify-items-center opacity-80">
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-3xl font-bold text-slate-900 dark:text-slate-100">20+</span>
+                            <span class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold">Years
+                                Exp</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-3xl font-light text-primary/80 dark:text-primary/90">Global</span>
+                            <span
+                                class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold">E-Commerce</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-3xl font-light text-slate-800 dark:text-slate-200">Strategy</span>
+                            <span
+                                class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold">Mindset</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1">
+                            <span class="text-3xl font-light text-primary/80 dark:text-primary/90">Trusted</span>
+                            <span
+                                class="text-[10px] uppercase tracking-[0.2em] text-slate-400 font-semibold">Advisor</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-3xl mx-auto px-6 py-32">
+                <div class="flex items-center gap-4 mb-14">
+                    <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-50 tracking-tight lowercase">focus</h2>
+                    <div class="h-px flex-1 bg-slate-100 dark:bg-slate-800"></div>
+                </div>
+                <div class="space-y-8">
+                    <div class="group flex gap-6">
+                        <div class="mt-1">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Product Lifecycles</h3>
+                            <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light">Understanding how
+                                products evolve over time — and how AI can model, optimize, and predict their
+                                trajectory.</p>
+                        </div>
+                    </div>
+                    <div class="group flex gap-6">
+                        <div class="mt-1">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">AI-Native Operations</h3>
+                            <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light">Reimagining
+                                commerce workflows where AI acts as a collaborator across sourcing, merchandising, and
+                                execution.</p>
+                        </div>
+                    </div>
+                    <div class="group flex gap-6">
+                        <div class="mt-1">
+                            <span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900 dark:text-slate-100 mb-2">Applied Experiments</h3>
+                            <p class="text-slate-500 dark:text-slate-400 leading-relaxed font-light">Small, real-world
+                                prototypes and field tests that explore what actually works at the edge of AI and
+                                commerce.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="max-w-5xl mx-auto px-6 py-32 border-t border-slate-100 dark:border-slate-800/60"
+                id="exploring">
+                <h2 class="text-2xl font-bold text-slate-900 dark:text-slate-50 tracking-tight mb-16 lowercase">what I'm
+                    reading</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="group cursor-pointer">
+                        <div
+                            class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 mb-8 border border-slate-100 dark:border-slate-800 relative">
+                            <img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 opacity-90"
+                                data-alt="Abstract neural network visualization on dark background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLoMU442yAQmCxQBe-5evp0zDxhCMo-6Jb-I8sxOlJUh0xc870bEpUlwYhvBoe8TDM5c8STJVlgwRn1Ob8VaeQ85BfhcA6NKWjs2hFEbw05vTND3rf6fWy2Wq4Yns3L6bOZxouYuXNf2_ZmmkA9pqNzFgFJBvgSSqGJ0kFdXAktUFRjoQU4sc_l8sTa76u_asf_aE27cDTqtqm1DynqNJuLrHHdrYhZgxohyi8UmYKH-G-ibkPXom5FFkH9gs304y5-5boLYIzM6Q" />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-3 group-hover:text-primary transition-colors">
+                            The end of the search bar</h3>
+                        <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">Why the next generation
+                            of shoppers won't 'search' for products, they'll describe needs.</p>
+                    </div>
+                    <div class="group cursor-pointer">
+                        <div
+                            class="aspect-[16/10] w-full rounded-2xl overflow-hidden bg-slate-50 dark:bg-slate-800 mb-8 border border-slate-100 dark:border-slate-800 relative">
+                            <img class="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700 opacity-90"
+                                data-alt="Modern high-tech logistics warehouse with robots"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXRZ8Kvq0SvyQNG06ooiowOCqEqyU6vTJXFz0HfSpdUyOZL59Cr8IBuQg33YZgBjvSUs59VefUQES9zFfBqZP_gKIRt5DDOK47R1LIRWXaIjLy0uszvGLBZXNb33h8HAtm9wEwnDmoYiMLpf0smYoMLJeLVqWc0tGBXuqVeFHyOZbkWUl4GVn_ATWO4kXdh0JFT-_NN0iML-PSWXBY28m7g6r-8dw9nCnRzZXwc-XteAki_1oQeBZ9a41Qdb9uMkuoKWKNePFp0x4" />
+                        </div>
+                        <h3
+                            class="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-3 group-hover:text-primary transition-colors">
+                            Agentic Supply Chains</h3>
+                        <p class="text-slate-500 dark:text-slate-400 font-light leading-relaxed">How autonomous agents
+                            are transforming mid-mile logistics from a cost center to a competitive advantage.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="border-t border-slate-100 dark:border-slate-800/60 py-20 bg-white dark:bg-background-dark">
+            <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-12">
+                <div class="flex items-center gap-2">
+                    <span class="text-slate-400 text-[13px] font-medium tracking-tight lowercase">© 2024–2026
+                        ecomai.ai</span>
+                </div>
+                <div class="flex items-center gap-10">
+                    <a class="text-[13px] font-medium text-slate-400 hover:text-primary transition-colors lowercase tracking-wide"
+                        href="mailto:sean@ecomai.ai">email</a>
+                    <a class="text-[13px] font-medium text-slate-400 hover:text-primary transition-colors lowercase tracking-wide"
+                        href="https://www.linkedin.com/in/sean-a-finnegan/">linkedin</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
